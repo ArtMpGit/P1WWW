@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+body {
+    margin: 0;
+    background-color: #0F1117;
+    /* background-image: url('./images/JJTKSN.png');
+    overflow: hidden;
+    background-size: contain; */
+}
+
+.title,
+.footer-title {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Zen Dots', cursive;
+}
+
+.banner {
+    height: 50vh;
+    background-image: url('./images/banner-background.png');
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .banner-img {
+    height: inherit
+}
+
+.listed-content {
+    padding: 2rem;
+}
+
+.listed-content .anime-card {
+    display: table;
+    background-color: #1F232E;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-image,
+.card-information {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    font-family: 'Zen Dots', cursive;
+    color: white;
+}
+
+.card-information {
+    padding: 1rem;
+}
+
+.card-information h3,
+.card-information p {
+    font-weight: 500;
+}
+
+.card-information h3 {
+    margin-bottom: 0;
+    color: #A49F9F;
+}
+
+.card-information p {
+    margin-top: 0;
+}
+
+.footer {
+    background-color: #1F232E;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.footer .footer-title {
+    margin: 0;
+    padding: 1rem
+}
+
+@media screen and (max-width: 1250px) {
+    .card-information p {
+        margin-top: 0;
+        font-size: .8rem
+    }
+    .card-image {
+        height: 22rem;
+        width: 24.5vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .anime-card {
+        display: block !important;
+    }
+    .card-image {
+        height: 22rem;
+        width: 100%;
+    }
+}
